@@ -37,7 +37,7 @@ export default function Profile({ imgUri, genero, nome, telefone, email}) {
       </View>
 
       <View style={styles.labelContainer}>
-        <Text style={[styles.texto, styles.textoLabel]}>Email</Text>
+        <Text style={[styles.texto, styles.textoLabel]}>Email:</Text>
         <Text style={styles.texto}>{pessoa.email}</Text>
       </View>
 
@@ -53,9 +53,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   imgContainer: {
-    marginTop: 50,
-    borderBottomWidth: 1,
-    borderBottomColor: '#9b111e',
+    marginTop: 10,
     padding: 20
   },
   img: {
@@ -63,17 +61,19 @@ const styles = StyleSheet.create({
     height: 250,
     borderWidth: 4,
     borderColor: '#9b111e',
-    borderRadius: 20,
+    borderRadius: 160,
     padding: 20
   },
   labelContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    width: '100%',
+    width: '90%',
     padding: 20,
-    borderBottomWidth: 1,
-    borderBottomColor: '#9b111e'
+    borderWidth: 1,
+    borderColor: '#9b111e',
+    borderRadius: 100,
+    margin: 10,
   },
   texto: {
     fontSize: 20,
